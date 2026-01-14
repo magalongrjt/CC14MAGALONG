@@ -4,75 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magalong's Resume</title>
+    <style>
+        /* Basic styling for the navbar */
+        ul.navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        ul.navbar li {
+            display: inline;
+            padding: 10px 15px;
+        }
+
+        ul.navbar li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        ul.navbar li a:hover {
+            background-color: #111;
+        }
+
+        /* Smooth scrolling effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Style for sections */
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Ralvin Jay Magalong</h1>
     <p>Baguio City, Philippines | +639762904286 | rtm2821@students.uc-bcf.edu.ph </p>
-    <br>
-    <blockquote><ul><a href="index.html">Personal Information</a></ul><ul><a href="Education.html">Education</a></ul><ul><a href="skills.html">Skills</a></ul><ul><a href="hobbies.html">Hobbies</a></ul></blockquote>
+    
+    <!-- Navbar -->
+    <ul class="navbar">
+        <li><a href="#personal-info">Personal Information</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+    </ul>
+
     <hr>
-    <h2>Personal Information</h2>
-    <p> I am a 19-year-old Information Technology major in ERP student at the University of the Cordilleras, 
+
+    <!-- Personal Information Section -->
+    <section id="personal-info">
+        <h2>Personal Information</h2>
+        <p>I am a 19-year-old Information Technology major in ERP student at the University of the Cordilleras, 
         specializing in enterprise resource planning systems and business technology integration. 
         I am eager to apply my growing technical skills through internships and hands-on projects 
         to gain practical experience in the IT field.</p>
+    </section>
     <hr>
-    <h2>Education</h2>
-    <ul>
-        <li>Bachelor of Science in Information Technology – Enterprise Resource Planning (IT-ERP)  
-            University of the Cordilleras | Expected Graduation: 2027</li>
-        <br>
-        <li>Senior High School (STEM)  
-            University of the Cordilleras Integrated Senior High School | Graduated with Honors, 2024</li>
-        <br>
-        <li>High School  
-            Baguio City National Science High School | Graduated with Honors, 2022</li>
-    </ul>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Science in Information Technology – Enterprise Resource Planning (IT-ERP)  
+                University of the Cordilleras | Expected Graduation: 2027</li>
+            <br>
+            <li>Senior High School (STEM)  
+                University of the Cordilleras Integrated Senior High School | Graduated with Honors, 2024</li>
+            <br>
+            <li>High School  
+                Baguio City National Science High School | Graduated with Honors, 2022</li>
+        </ul>
+    </section>
     <hr>
-    <h2>Skills</h2>
-    <p>A balanced combination of strong interpersonal abilities and technical expertise, 
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>A balanced combination of strong interpersonal abilities and technical expertise, 
         including effective communication, teamwork, leadership, analytical and critical thinking, 
         adaptability, data management, predictive analysis, and ERP system experience.</p><br>
-    <h4>Soft Skills</h4>
-    <ul>
-        <li>Communicating</li><br>
-        <li>Teamwork</li><br>
-        <li>Leading</li><br>
-        <li>Analyzing</li><br>
-        <li>Critical Thinking</li><br>
-        <li>Adaptable</li><br>
-        <li>Time Management</li>
-    </ul>
-    <br>
-    <h4>Hard Skills</h4>
-    <ul>
-        <li>ERP Management</li><br>
-        <li>Data management</li><br>
-        <li>Data Integration</li><br>
-        <li>Predictive Analysis</li>
-    </ul><br>
+        <h4>Soft Skills</h4>
+        <ul>
+            <li>Communicating</li><br>
+            <li>Teamwork</li><br>
+            <li>Leading</li><br>
+            <li>Analyzing</li><br>
+            <li>Critical Thinking</li><br>
+            <li>Adaptable</li><br>
+            <li>Time Management</li>
+        </ul>
+        <br>
+        <h4>Hard Skills</h4>
+        <ul>
+            <li>ERP Management</li><br>
+            <li>Data management</li><br>
+            <li>Data Integration</li><br>
+            <li>Predictive Analysis</li>
+        </ul><br>
+    </section>
     <hr>
-    <h2>Hobbies & Interests</h2>
-    <p>Engages in activities that reflect problem-solving, creativity, 
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <p>Engages in activities that reflect problem-solving, creativity, 
         teamwork, and an active lifestyle, including gaming, technical tinkering, 
         cooking, outdoor recreation, and competitive sports.</p>
- <ul>
-    <li>Collecting and playing tabletop and party games</li>
-    <li>Technical tinkering and hands-on problem solving</li>
-    <li>Cooking and culinary experimentation</li>
-    <li>Hiking and outdoor recreation</li>
-    <li>Bowling</li>
-    <li>Airsoft activities</li>
- </ul>
+        <ul>
+            <li>Collecting and playing tabletop and party games</li>
+            <li>Technical tinkering and hands-on problem solving</li>
+            <li>Cooking and culinary experimentation</li>
+            <li>Hiking and outdoor recreation</li>
+            <li>Bowling</li>
+            <li>Airsoft activities</li>
+        </ul>
+    </section>
     <hr>
-
-<!--Create your resume using HTML
-Make a menu(Navigation) using UL
-Create the layout and structure using HTML, 
-do not worry about the design, we will 
-do that next meeting.-->
-
-
 
 </body>
 </html>
