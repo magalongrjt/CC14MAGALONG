@@ -1,0 +1,40 @@
+ul.navbar {
+    list-style-type: none;
+    padding: 80;
+    margin: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+ul.navbar li {
+    display: inline;
+    padding: 10px 15px;
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul.navbar li a:hover {
+    background-color: #d8d8d8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 50px;
+    margin: 20px 0;
+}
+
+img.hobby-image {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+
+img.hobby-image:first-of-type {
+    margin-right: 4%;
+}
