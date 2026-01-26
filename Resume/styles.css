@@ -1,3 +1,7 @@
+body {
+    background: #f3e7fa;
+}
+
 ul.navbar {
     list-style-type: none;
     padding: 80;
@@ -37,4 +41,10 @@ img.hobby-image {
 
 img.hobby-image:first-of-type {
     margin-right: 4%;
+}
+
+img.self-image {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
 }
