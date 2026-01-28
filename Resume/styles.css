@@ -273,6 +273,15 @@ body {
     background-color: var(--bg-light);
 }
 
+.education-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -326,6 +335,15 @@ body {
 
 .accomplishments-section {
     background-color: var(--bg-white);
+}
+
+.accomplishments-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
 }
 
 .accomplishments-grid {
@@ -383,6 +401,15 @@ body {
     background-color: var(--bg-light);
 }
 
+.startups-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
 .startups-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -436,6 +463,15 @@ body {
 
 .skills-section {
     background-color: var(--bg-light);
+}
+
+.skills-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
 }
 
 .skills-container {
@@ -608,7 +644,7 @@ body {
 .fidget-button {
     position: fixed;
     right: 30px;
-    top: 50%;
+    top: 90%;
     transform: translateY(-50%);
     background: none;
     border: none;

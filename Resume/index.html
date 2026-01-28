@@ -69,6 +69,10 @@
     <section id="education" class="section education-section">
         <div class="container">
             <h2 class="section-title">Education</h2>
+            <p class="education-intro">
+              Pursued academic training focused on building strong fundamentals, analytical thinking, 
+              and practical knowledge through structured coursework and hands-on learning experiences.
+            </p>
             <div class="education-grid">
                 <div class="education-card">
                     <div class="education-icon">🎓</div>
@@ -96,6 +100,10 @@
     <section id="skills" class="section skills-section">
         <div class="container">
             <h2 class="section-title">Skills</h2>
+            <p class="skills-intro">
+                Demonstrates a balanced skill set combining technical proficiency, problem-solving ability, 
+                and adaptability, developed through continuous practice and real-world application.
+            </p>
             <div class="skills-container">
                 <!-- Soft Skills -->
                 <div class="skills-category">
@@ -217,6 +225,10 @@
     <section id="accomplishments" class="section accomplishments-section">
         <div class="container">
             <h2 class="section-title">Accomplishments</h2>
+            <p class="accomplishments-intro">
+                Achieved measurable milestones that highlight initiative, consistency, and the ability 
+                to deliver results across academic, professional, and personal projects.
+            </p>
             <div class="accomplishments-grid">
                 <div class="accomplishment-card">
                     <img src="accomplishment-1.jpg" alt="Placeholder for accomplishment image - academic achievement" class="accomplishment-image">
@@ -247,6 +259,10 @@
     <section id="startups" class="section startups-section">
         <div class="container">
             <h2 class="section-title">Startups & Projects</h2>
+            <p class="startups-intro">
+                Involved in developing and executing startup initiatives, gaining experience in ideation, 
+                validation, collaboration, and iterative problem-solving in fast-paced environments.
+            </p>
             <div class="startups-grid">
                 <div class="startup-card">
                     <img src="startup-1.jpg" alt="Placeholder for startup image" class="startup-image">
@@ -324,7 +340,7 @@
 
     <!-- Fidget Button -->
     <button id="fidget-button" class="fidget-button" aria-label="Fidget button">
-        <img src="Button.jpeg" alt="Fidget button" id="fidget-button-img">
+        <img src="Button.png" alt="Fidget button" id="fidget-button-img">
     </button>
 
     <script>
@@ -360,10 +376,10 @@
         fidgetButton.addEventListener('click', function() {
             isPressed = !isPressed;
             if (isPressed) {
-                fidgetButtonImg.src = 'Buttoned.jpeg';
+                fidgetButtonImg.src = 'Buttoned.png';
                 fidgetButton.classList.add('pressed');
             } else {
-                fidgetButtonImg.src = 'Button.jpeg';
+                fidgetButtonImg.src = 'Button.png';
                 fidgetButton.classList.remove('pressed');
             }
         });
