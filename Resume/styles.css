@@ -772,34 +772,71 @@ body {
     }
 }
 
-.particle {
+/* Button fixed in bottom-right, scrolls with viewport */
+#fidget-button {
     position: fixed;
+    bottom: 30px;
     right: 30px;
-    top: 90%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
+    z-index: 9999;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    width: auto;  /* let image define size */
+    height: auto;
+}
+
+/* Button image keeps original size */
+#fidget-button img {
+    display: block;
+    width: 100px;   /* smaller width */
+    height: auto;  /* maintain aspect ratio */
+}
+
+
+/* Particles */
+.particle {
+    /* remove fixed */
+    position: absolute;    /* now scrolls with page */
+    width: 12px;
+    height: 12px;
     background: orange;
     border-radius: 50%;
     pointer-events: none;
-    animation: explode 0.6s ease-out forwards;
+    transform: translate(0,0);
+    animation: explode 1s ease-out forwards;
 }
+
 
 @keyframes explode {
     to {
-        transform: translate(var(--x), var(--y)) scale(0);
+        transform:
+          translate(var(--x), var(--y))
+          rotate(720deg)
+          scale(0);
         opacity: 0;
     }
 }
 
+/* Shake the screen */
 .shake {
-    animation: shake 0.4s;
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0%   { transform: translate(0,0); }
+    10%  { transform: translate(15px,-15px); }
+    20%  { transform: translate(-15px,15px); }
+    30%  { transform: translate(15px,15px); }
+    40%  { transform: translate(-15px,-15px); }
+    50%  { transform: translate(18px,-18px); }
+    60%  { transform: translate(-18px,18px); }
+    70%  { transform: translate(18px,18px); }
+    80%  { transform: translate(-18px,-18px); }
+    90%  { transform: translate(12px,-12px); }
+    100% { transform: translate(0,0); }
 }
 
-@keyframes shake {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(5px, -5px); }
-    50% { transform: translate(-5px, 5px); }
-    75% { transform: translate(5px, 5px); }
-    100% { transform: translate(0, 0); }
+/* Flash screen */
+body.flash {
+    background: white;
 }
