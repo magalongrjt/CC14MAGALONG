@@ -370,10 +370,12 @@ body {
 
 .accomplishment-image {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    max-height: 220px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #ffffff;
     display: block;
+    padding: 1.5rem;
 }
 
 .accomplishment-content {
@@ -434,10 +436,12 @@ body {
 
 .startup-image {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    max-height: 220px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #ffffff;
     display: block;
+    padding: 1.5rem;
 }
 
 .startup-content {
@@ -635,6 +639,22 @@ body {
 .footer-text {
     font-size: 0.9rem;
     opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.footer-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.do-not-press-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: white;
+    font-style: italic;
 }
 
 /* ============================================
@@ -642,15 +662,10 @@ body {
    ============================================ */
 
 .fidget-button {
-    position: fixed;
-    right: 30px;
-    top: 90%;
-    transform: translateY(-50%);
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 999;
     transition: var(--transition);
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
@@ -665,13 +680,13 @@ body {
 }
 
 .fidget-button:hover {
-    transform: translateY(-50%) scale(1.1);
+    transform: scale(1.1);
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
 }
 
 .fidget-button:active,
 .fidget-button.active {
-    transform: translateY(-50%) scale(0.95);
+    transform: scale(0.95);
 }
 
 .fidget-button.pressed {
@@ -680,10 +695,10 @@ body {
 
 @keyframes buttonBounce {
     0%, 100% {
-        transform: translateY(-50%) scale(1);
+        transform: scale(1);
     }
     50% {
-        transform: translateY(-50%) scale(0.9);
+        transform: scale(0.9);
     }
 }
 
@@ -763,34 +778,18 @@ body {
         font-size: 0.8rem;
     }
 
-    .fidget-button {
-        right: 15px;
-    }
-
     .fidget-button img {
         width: 60px;
     }
-}
 
-/* Button fixed in bottom-right, scrolls with viewport */
-#fidget-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 9999;
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
-    width: auto;  /* let image define size */
-    height: auto;
-}
+    .footer-button-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 
-/* Button image keeps original size */
-#fidget-button img {
-    display: block;
-    width: 100px;   /* smaller width */
-    height: auto;  /* maintain aspect ratio */
+    .do-not-press-text {
+        font-size: 0.8rem;
+    }
 }
 
 
