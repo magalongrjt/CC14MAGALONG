@@ -1,0 +1,121 @@
+JavaScript Programming Exercises
+console.log("Hello World!")
+console.log("Welcome to JavaScript Programming!")
+const name = "My name is Ralvin"
+const age = 20
+const favProgramLang = "My favorite programming langquage is SQL"
+            name
+            'My name is Ralvin'
+            age
+            20
+            favProgramLang
+            'SQL'
+
+let num01 = prompt("Enter 1st number: ")
+let num02 = prompt("Enter 2nd number: ")
+or
+var num01 = '10'
+var num02 = '5'
+
+
+var sum = num01 + num02
+var dif = num01 - num02
+var prod = num01 - num02
+var prod = num01 * num02
+var div = num01 / num02
+
+var printsum = console.log('Sum: ' + sum)
+var printDif = console.log('Difference: ' + dif)
+var printProd = console.log('Product: ' + prod)
+var printDiv = console.log('Quotient: ' + div)
+
+let num03 = prompt('Even or Odd, enter number here to check: ')
+console.log('Input: ' + num03)
+if (num03 % 2 === 0) {
+    console.log('Even')
+} else {
+    console.log('Odd')
+}
+
+let voterAge = prompt('What is your age: ')
+if (voterAge>17) {
+    console.log('You are eligible to vote.')
+} else {
+    console.log('You are not eligible to vote.')
+}
+            You are eligible to vote.
+
+let grade = prompt("Enter Student's Grade: ")
+console.log('Input: ' + grade)
+if (grade >= 90) {
+    console.log("Excellent")
+} else if (grade >= 80) {
+    console.log("Very Good")
+} else if (grade >= 70) {
+    console.log("Good")
+} else if (grade >= 60) {
+    console.log("Fair")
+} else {
+    console.log("Failed")
+}
+
+var counter = 0
+while (counter<10){
+counter = counter + 1
+console.log(counter)
+}
+
+let num04 = prompt("Enter number for multiplication table: ")
+var counter = 0
+while (counter<10){
+counter = counter + 1
+var prod2 = num04 * counter
+console.log(num04 + ' x ' + counter + ' = ' + prod2)
+}
+
+var counter = 0
+var sum100 = 0
+while (counter<100){
+counter = counter + 1
+sum100 = sum100 + counter
+}
+console.log('The sum is: ' + sum100)
+
+function greetUser(name){
+console.log('Hello ' + name + '! Welcome to JavaScript.')
+}
+            greetUser('Maria')
+            VM3451:2 Hello Maria! Welcome to JavaScript.
+
+function calculateArea(length, width){
+var area = length*width
+console.log('Area: ' + area)
+}
+
+            calculateArea(6, 7)
+            Area: 42
+
+var fruits5 = ['Apple', 'Banana', 'Mango', 'Orange', 'Pear']
+fruits5.forEach(item => {
+    console.log(item);
+})
+            Apple
+            Banana
+            Mango
+            Orange
+            Pear
+
+var numArray = [10, 45, 3, 67, 22]
+var highest = [0]
+numArray.forEach(num => {
+    if(num > highest){
+        highest = num
+        }
+})
+console.log(highest)
+            67
+
+
+let palCheck = prompt('Enter word to see if Palindrome: ')
+console.log('Input: ' + palCheck)
+
