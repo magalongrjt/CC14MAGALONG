@@ -115,7 +115,22 @@ numArray.forEach(num => {
 console.log(highest)
             67
 
+var numArray2 = [1,2,3,4,5]
+console.log('Original: ' + numArray2)
+numArray2.reverse()
+console.log('Reversed: ' + numArray2)
 
 let palCheck = prompt('Enter word to see if Palindrome: ')
 console.log('Input: ' + palCheck)
+palArray = palCheck.split('').reverse()
+if(palCheck = palArray){
+console.log('This is a palindrome' + '\n Output: ' + palArray)
+}
 
+const max = 10;
+const randNum = Math.floor(Math.random() * max+1); 
+guess = prompt('Guess the number with an integer: ')
+if(parseInt(guess)=randNum){
+console.log('Correct!')
+} else {
+console.log('Try Again(⓿_⓿)')
